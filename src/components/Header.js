@@ -27,12 +27,11 @@ const Header = (props) => {
               id="logo"
               label={
                 <Link to="/">
-                  {props.data.site.siteMetadata.title.toUpperCase()}
+                  {props.data.contentfulCompany.name}
                 </Link>
               }
               variant="outlined"
             />
-            Test Text
           </Grid>
           <Grid item>
             <Hidden smDown>
@@ -55,14 +54,8 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        site {
-          siteMetadata {
-            title
-            contact {
-              email
-              phone
-            }
-          }
+        contentfulCompany {
+          name
         }
       }
     `}
