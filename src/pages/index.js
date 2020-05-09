@@ -20,10 +20,10 @@ const styles = () => ({
 const Home = (props) => {
   const products = props.data.allMarkdownRemark.edges;
   return (
-    <Page title="Gatsby Material UI Business Starter">
+    <Page title="Gatsby Material UI Contentful Business Starter">
       <SEO title="Home">
         <meta
-          content="Beautiful Gatsby Material UI Business Starter. Tiny code. Well organized. Ready to customize and go."
+          content="Beautiful Gatsby Material UI Contentful Business Starter. Tiny code. Well organized. Ready to customize and go."
           name="description"
         />
       </SEO>

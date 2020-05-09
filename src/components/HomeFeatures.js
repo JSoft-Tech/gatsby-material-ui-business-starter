@@ -55,9 +55,10 @@ const HomeFeatures = (props) => {
             </Avatar>
           }
           className={props.classes.featureChip}
-          label="Uses Material Icons"
+          label="Uses Content from Contentful"
         />
       </Grid>
+    
     </Grid>
   );
 };
