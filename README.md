@@ -2,12 +2,6 @@
 
 **[Check out the demo.](https://bluepeter.github.io/gatsby-material-ui-business-starter/)**
 
-Clone and run npm install
-Delete node_modules/gatsby-source-contentful/src/fragements.js
-Update contentful space id in gatsby.config.js
-Update contentful access token in .env e.g. CONTENTFUL_ACCESS_TOKEN=my_access_token
-run gatsby develop
-
 Stripped-down Gatsby small business starter that uses the well-maintained and
 beautiful [Material UI](https://material-ui.com/) React.js project. Fully
 configured to reliably work with this powerful library out-of-the-box, in PROD,
@@ -54,6 +48,18 @@ You can use CSS in two different ways:
 
 You can adjust the theme palette colors in
 [`getPageContext.js`](https://github.com/bluepeter/gatsby-material-ui-business-starter/blob/master/src/utils/getPageContext.js).
+
+## Development
+```
+npm install
+```
+
+Delete node_modules/gatsby-source-contentful/src/fragements.js
+
+Update contentful space id in gatsby.config.js
+
+Update contentful access token in .env e.g. CONTENTFUL_ACCESS_TOKEN=my_access_token
+
 
 ## Deployment
 
