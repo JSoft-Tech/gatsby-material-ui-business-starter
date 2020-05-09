@@ -32,6 +32,7 @@ const Header = (props) => {
               }
               variant="outlined"
             />
+            Test Text
           </Grid>
           <Grid item>
             <Hidden smDown>

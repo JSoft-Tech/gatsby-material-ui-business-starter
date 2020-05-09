@@ -1,3 +1,9 @@
+const dotenv = require ("dotenv");
+
+if(process.env.NODE_ENV !== 'production'){
+  dotenv.config();
+}
+
 module.exports = {
   pathPrefix: "/gatsby-material-ui-business-starter",
   siteMetadata: {
@@ -27,6 +33,14 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `6duslta3qeqo`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       },
     },
   ],
